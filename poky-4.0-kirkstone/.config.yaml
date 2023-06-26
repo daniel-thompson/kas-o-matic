@@ -1,6 +1,6 @@
 header:
   version: 13
   includes:
-    - ../kas-cfgs/sensible.yaml
-    - ../kas-cfgs/kirkstone.yaml
-    - ../kas-cfgs/poky.yaml
+    - config/sensible.yaml
+    - config/kirkstone.yaml
+    - config/poky.yaml

@@ -1,8 +1,8 @@
 header:
   version: 13
   includes:
-    - ../kas-cfgs/sensible.yaml
-    - ../kas-cfgs/kirkstone.yaml
+    - config/sensible.yaml
+    - config/kirkstone.yaml
 
 repos:
   openembedded-core:

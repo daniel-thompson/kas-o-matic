@@ -1,0 +1,8 @@
+.*.swp
+.*.swo
+
+build/
+meta-*/
+openembedded-core/
+poky/
+shared-caches/

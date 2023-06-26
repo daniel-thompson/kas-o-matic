@@ -1,0 +1,16 @@
+header:
+  version: 13
+  includes:
+    - ../kas-cfgs/sensible.yaml
+    - ../kas-cfgs/kirkstone.yaml
+    - ../kas-cfgs/poky.yaml
+
+machine: qemu-generic-arm64
+
+repos:
+  meta-arm:
+    url: https://git.yoctoproject.org/meta-arm
+    layers:
+      meta-arm:
+      meta-arm-bsp:
+      meta-arm-toolchain:

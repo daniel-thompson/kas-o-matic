@@ -1,0 +1,24 @@
+header:
+  version: 13
+  includes:
+    - ../kas-cfgs/sensible.yaml
+    - ../kas-cfgs/kirkstone.yaml
+
+repos:
+  openembedded-core:
+    url: https://git.openembedded.org/openembedded-core/
+    layers:
+      meta:
+
+  # Bitbake is special for a number of reasons:
+  #
+  # 1. It is not a layer
+  # 2. It does not use "codename" numbering (so we have to lookup the
+  #    right tag from https://wiki.yoctoproject.org/wiki/Releases )
+  # 3. It needs to live in a specific directory relative to oe-core
+  bitbake:
+    url: https://git.openembedded.org/bitbake/
+    refspec: "2.0"
+    path: openembedded-core/bitbake
+    layers:
+      bitbake: excluded

@@ -1,0 +1,16 @@
+header:
+  version: 13
+
+machine: qemuarm64
+distro: nodistro
+target: core-image-minimal
+
+local_conf_header:
+  conserve-disk-space: |
+    INHERIT += "rm_work"
+
+  default-features: |
+    EXTRA_IMAGE_FEATURES += "debug-tweaks"
+
+  default-packages: |
+    CORE_IMAGE_EXTRA_INSTALL += "vim-tiny"

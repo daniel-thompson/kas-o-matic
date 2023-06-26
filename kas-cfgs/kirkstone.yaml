@@ -1,0 +1,11 @@
+header:
+  version: 13
+
+defaults:
+  repos:
+    refspec: kirkstone
+
+local_conf_header:
+  shared-caches: |
+    DL_DIR = "${TOPDIR}/../../shared-caches/kirkstone/downloads"
+    SSTATE_DIR = "${TOPDIR}/../../shared-caches/kirkstone/sstate-cache"

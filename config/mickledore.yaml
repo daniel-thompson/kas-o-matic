@@ -1,0 +1,11 @@
+header:
+  version: 13
+
+defaults:
+  repos:
+    refspec: mickledore
+
+local_conf_header:
+  shared-caches: |
+    DL_DIR = "${TOPDIR}/../../shared-caches/mickledore/downloads"
+    SSTATE_DIR = "${TOPDIR}/../../shared-caches/mickledore/sstate-cache"

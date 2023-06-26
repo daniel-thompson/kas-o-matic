@@ -1,0 +1,11 @@
+header:
+  version: 13
+
+defaults:
+  repos:
+    refspec: dunfell
+
+local_conf_header:
+  shared-caches: |
+    DL_DIR = "${TOPDIR}/../../shared-caches/dunfell/downloads"
+    SSTATE_DIR = "${TOPDIR}/../../shared-caches/dunfell/sstate-cache"

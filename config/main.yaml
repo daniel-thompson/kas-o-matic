@@ -1,0 +1,11 @@
+header:
+  version: 13
+
+defaults:
+  repos:
+    refspec: master
+
+local_conf_header:
+  shared-caches: |
+    DL_DIR = "${TOPDIR}/../../shared-caches/main/downloads"
+    SSTATE_DIR = "${TOPDIR}/../../shared-caches/main/sstate-cache"
